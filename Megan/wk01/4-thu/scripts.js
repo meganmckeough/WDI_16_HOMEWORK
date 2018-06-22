@@ -62,21 +62,19 @@
 
 // transmogrifier(1,4,2);
 
-//Still working on 5. 
 
 // 5. Write a function `wordReverse` that accepts a single argument, a string. The
 // method should return a string with the order of the words reversed. Don't worry
 // about punctuation.
 // Example: wordReverse('we are good friends') => 'friends good are we'
 
+// var string = "you are a potato";
 
-var string = "you are a potato";
+// function wordReverse () {
+// 	var reversed = string.split(' ').reverse().join(' ');
+// 	console.log(reversed);
+// }
 
-function wordReverse (string) {
-	var reversed = string.split('').reverse().join('');
-	console.log(reversed);
-}
-
-wordReverse();
+// wordReverse();
 
 
