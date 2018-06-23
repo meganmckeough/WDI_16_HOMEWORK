@@ -34,11 +34,11 @@
 
 //I got the below the work but I don't know if it's what the exercise was after?
 
-// var myArray = ["pie", "chips", "burger", "icecream"];
+// var myArray = ["pie", "chips", "burger", "icecream", "chocolate"];
 // var stringLengthArray = [];
 
 // function findStringLengths () {
-// 	for (i = 0; i < 4; i++) {
+// 	for (i = 0; i < myArray.length; i++) {
 // 		var stringLength = myArray[i].length;	
 // 		stringLengthArray.push(stringLength);
 // 	}
@@ -55,7 +55,7 @@
 // raised to the power of the third number.
 
 // function transmogrifier (num1,num2,num3) {
-// 	var product = num1 + num2;
+// 	var product = num1 * num2;
 // 	var powerOf = Math.pow(product, num3);
 // 	console.log(powerOf);
 // }
