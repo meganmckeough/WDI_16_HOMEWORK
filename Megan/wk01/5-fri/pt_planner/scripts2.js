@@ -1,4 +1,4 @@
-//Attempting to make it work regardless of direction (not just working one linear way)
+//Please look at scripts.js file for one direction solution - the below is attempting to make it work regardless of direction (not just working one linear way)
 
 //I gave up on this. I want to:
 // 1. check whether the origin is before Richmond

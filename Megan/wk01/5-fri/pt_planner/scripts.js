@@ -1,6 +1,7 @@
 // This isn't how I wanted to do it and I know this isn't the shortest, cleanest or most scaleable way to do it!
 // But I got it sort of working this way.
 //BIG ISSUE - only works when going from CITY LOOP out. Not INTO CITY, or in to RICHMOND then back OUT. 
+// see scripts2 for attempt to fix this.
 
 //hardcodes for testing
 var origin = "Melbourne Central";
