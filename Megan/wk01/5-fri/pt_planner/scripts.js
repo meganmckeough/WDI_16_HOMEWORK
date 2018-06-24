@@ -3,8 +3,8 @@
 //BIG ISSUE - only works when going from CITY LOOP out. Not INTO CITY, or in to RICHMOND then back OUT. 
 
 //hardcodes for testing
-var origin = "Burnley";
-var destination = "Tooronga";
+var origin = "Melbourne Central";
+var destination = "Windsor";
 
 //empty array to push station names for printing
 var myJourney = [];
