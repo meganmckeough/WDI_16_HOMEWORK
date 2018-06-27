@@ -1,45 +1,66 @@
 //hardcodes for testing
-var origin = "Burnley";
-var destination = "Flagstaff";
-
-//empty array to push station names for printing
-var myJourney = [];
-
-//arrays of train lines
-var glenWaverley = ["Flagstaff", "Melbourne Central", "Parliament", "Richmond", "East Richmond", "Burnley", "Hawthorn", "Glenferrie"];
-var alamein = ["Flinders Street", "Richmond", "Kooyong", "Tooronga"];
-var sandringham = ["Southern Cross", "Richmond", "South Yarra", "Prahran", "Windsor"];
-
-
-var originIndex = glenWaverley.indexOf(origin);
-var destinationIndex = glenWaverley.indexOf(destination);
-
-// function to slice out the stations from array
-function findStops () {
-	if (originIndex < destinationIndex) {
-		return glenWaverley.slice(originIndex, destinationIndex + 1);
-	} else {
-		return glenWaverley.slice(destinationIndex, originIndex + 1).reverse(" ");
-	}
-};
-
-
-//a very convoluted way to get the arrow journey output!
-// for (i = 0; i < destinationIndex - 2; i++) {
-// 	myJourney.push(findingStations[i] + " ---> ");
-// }
-
-//printing the output
+var origin = "Flinders Street";
+var destination = "Tooronga";
 
 console.log("origin: " + origin);
 console.log("destination: " + destination);
-console.log(myJourney = findStops());
-if (originIndex < destinationIndex) {	
-	console.log(destinationIndex - originIndex + " stops total");	
-} else {
-	console.log(originIndex - destinationIndex + " stops total");
-}
 
-// console.log(myJourney);
+//empty array to push station names for printing
+//DO I STILL NEED THIS???
+// var myJourney = [];
+
+//objects of train lines
+var trainLines = [
+{
+	name: "glenWaverley",
+	stations: ["Flagstaff", "Melbourne Central", "Parliament", "Richmond", "East Richmond", "Burnley", "Hawthorn", "Glenferrie"]
+},
+{
+	name: "alamein",
+	stations: ["Flinders Street", "Richmond", "Kooyong", "Tooronga"]
+},
+{
+	name: "sandringham",
+	stations: ["Southern Cross", "Richmond", "South Yarra", "Prahran", "Windsor"]
+}
+];
+
+var trainLinesJourneyed = [];
+
+function findLines (stop) {
+	for (i = 0; i < trainLines.length; i++) {
+		if (trainLines[i].stations.includes(stop)) {
+			trainLinesJourneyed.push(trainLines[i].name);
+			return trainLines[i].stations.indexOf(stop);			
+		}
+	}
+};	
+
+var originIndex = findLines(origin);
+var destinationIndex = findLines(destination);
+// var richmondIndex = 
+
+if (originIndex < destinationIndex && trainLinesJourneyed[0] === trainLinesJourneyed[1]) {
+	console.log(trainLines[i].stations.slice(originIndex, destinationIndex + 1));
+	console.log(destinationIndex - originIndex + " stops total");
+} else if (originIndex > destinationIndex && trainLinesJourneyed[0] === trainLinesJourneyed[1]) {
+	console.log(trainLines[i].stations.slice(destinationIndex, originIndex + 1).reverse(" "));
+	console.log(originIndex - destinationIndex + " stops total");
+} 
+			
+
+		// } else if (trainLines[i].stations[i].includes(origin || destination)) {
+		// 	var originIndex = trainLines[i].stations[i].indexOf(origin);
+		// 	var destinationIndex = trainLines[i].stations[i].indexOf(destination);
+		// 	var trainLine = trainLines[i].name;
+		// }
+
+	
+
+//a very convoluted way to get the arrow journey output!
+// 
+
+
+
 
 
