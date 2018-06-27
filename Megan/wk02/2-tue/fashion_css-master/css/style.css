@@ -1,5 +1,5 @@
 body {
-	font-family: Helvetica;
+	font-family: Helvetica, sans-serif;
 	font-weight: 100;
 	color: grey;
 }
@@ -39,6 +39,7 @@ aside {
 	width: 30%;
 }
 
+
 main img {
 	width: 100%;
 }
@@ -53,6 +54,7 @@ article div {
 
 .more {
 	text-align: right;
+	color: darkred;
 }
 
 header nav div {
@@ -69,6 +71,7 @@ footer ul {
 	flex-direction: row;
 	list-style: none;
 	padding: 20px 0 10px;
+	color: darkred;
 }
 
 footer li {
@@ -95,4 +98,9 @@ footer li:first-child {
 
 .popular {
 	border-top: 1px grey solid;
+}
+
+a {
+	text-decoration: none;
+	color: darkred;
 }
