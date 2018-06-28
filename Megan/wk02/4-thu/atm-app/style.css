@@ -1,0 +1,66 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 20px;
+	background-color: mintcream;
+	font-family: 'Courier New', serif;
+}
+
+main > div {
+	text-align: center;
+	margin: 0 20px;
+	width: 30%;
+	border-radius: 10px;
+	background-color: red;
+}
+
+main > div > div {
+	font-size: 40px;
+	margin-bottom: 20px;
+}
+
+header {
+	display: flex;
+	text-align: center
+}
+
+img {
+	height: 100%;
+	width: 150px;
+	margin: 20px;
+}
+
+h1, h2 {
+	text-transform: uppercase;
+}
+
+h1 {
+	width: 65%;
+}
+
+.savings-atm {
+	border: 10px solid lightcoral;
+}
+
+.checking-atm {
+	border: 10px solid slateblue;
+}
+
+main {
+	display: flex;
+	justify-content: center;
+}
+
+main {
+	display: flex;
+}
+
+button {
+	margin: 20px auto;
+}
+
+input {
+	height: 50px;
+}

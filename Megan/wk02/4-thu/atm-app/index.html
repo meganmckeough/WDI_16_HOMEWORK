@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Online Bank</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	
+	<header>
+		<img src="bitcoin.png" alt="">
+		<h1>Online Bank</h1>
+	</header>
+
+	<main>
+		<div class="savings-atm">
+			<h2>Savings</h2>
+			<p>Your balance is...</p>
+			<div>$<span class="savings-balance">00.00</span></div>
+			<input class="savings-amount" type="number" placeholder="Enter amount here">
+			<div class="wrapper">
+				<button id="savings-withdraw-btn">Withdraw</button>
+				<button id="savings-deposit-btn">Deposit</button>
+			</div>
+		</div>	
+		<div class="checking-atm">
+			<h2>Checking</h2>
+			<p>Your balance is...</p>
+			<div>$<span class="checking-balance">00.00</span></div>
+			<input class="checking-amount" type="number" placeholder="Enter amount here">
+			<div class="wrapper">
+				<button id="checking-withdraw-btn">Withdraw</button>
+				<button id="checking-deposit-btn">Deposit</button>
+			</div>
+		</div>
+	</main>
+
+	<script src="app.js"></script>
+</body>
+</html>
