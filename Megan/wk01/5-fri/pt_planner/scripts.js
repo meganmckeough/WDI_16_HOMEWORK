@@ -1,6 +1,6 @@
 //hardcodes for testing
-var origin = "Glenferrie";
-var destination = "Flagstaff";
+var origin = prompt("Origin station?");
+var destination = prompt("Destination station?");
 
 console.log("Origin: " + origin);
 console.log("Destination: " + destination);
@@ -82,7 +82,7 @@ if (originIndex < destinationIndex && startingLine === endLine) {
 //printing rest of information, two parts because of that array issue
 if (startingLine === endLine) {
 	console.log(myJourneyArray[0].join(" ---> "));
-	console.log(myJourneyArray[0].length + 1 + " stops total");
+	console.log(myJourneyArray[0].length - 1 + " stops total");
 } else {
 	console.log(myJourneyArray[0].join(" ---> ") + " ---> " + myJourneyArray[1].join(" ---> "));
 	console.log(myJourneyArray[0].length + myJourneyArray[1].length - 1 + " stops total");
