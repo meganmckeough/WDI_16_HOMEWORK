@@ -10,10 +10,10 @@ function withdrawAmountSavings () {
 	} else {
 		alert("Not enough money!");
 	};
-	if (newBalance >= 1) {
+	if (newBalance >= 0.01) {
 		document.querySelector('.savings-atm').style.backgroundColor = 'lightgrey';
 	} else {
-		document.querySelector('.savings-atm').style.backgroundColor = 'red';
+		document.querySelector('.savings-atm').style.backgroundColor = 'orangered';
 	}
 };
 
@@ -21,10 +21,10 @@ function depositAmountSavings () {
 	var currentSavingsBalance = Number(document.querySelector('.savings-balance').innerHTML);
 	var newBalance = currentSavingsBalance + Number(savingsInput.value);
 	document.querySelector('.savings-balance').innerHTML = newBalance.toFixed(2);
-	if (newBalance >= 1) {
+	if (newBalance >= 0.01) {
 		document.querySelector('.savings-atm').style.backgroundColor = 'lightgrey';
 	} else {
-		document.querySelector('.savings-atm').style.backgroundColor = 'red';
+		document.querySelector('.savings-atm').style.backgroundColor = 'orangered';
 	}
 };
 
@@ -36,10 +36,10 @@ function withdrawAmountChecking () {
 	} else {
 		alert("Not enough money!");
 	}
-	if (newBalance >= 1) {
+	if (newBalance >= 0.01) {
 		document.querySelector('.checking-atm').style.backgroundColor = 'lightgrey';
 	} else {
-		document.querySelector('.checking-atm').style.backgroundColor = 'red';
+		document.querySelector('.checking-atm').style.backgroundColor = 'orangered';
 	}
 };
 
@@ -47,10 +47,10 @@ function depositAmountChecking () {
 	var currentCheckingBalance = Number(document.querySelector('.checking-balance').innerHTML);
 	var newBalance = currentCheckingBalance + Number(checkingInput.value);
 	document.querySelector('.checking-balance').innerHTML = newBalance.toFixed(2);
-	if (newBalance >= 1) {
+	if (newBalance >= 0.01) {
 		document.querySelector('.checking-atm').style.backgroundColor = 'lightgrey';
 	} else {
-		document.querySelector('.checking-atm').style.backgroundColor = 'red';
+		document.querySelector('.checking-atm').style.backgroundColor = 'orangered';
 	}
 };
 
