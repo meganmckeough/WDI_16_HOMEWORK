@@ -1,0 +1,9 @@
+dog
+cat
+rabbit
+deer
+ant
+porpoise
+alligator
+kangaroo
+platypus
