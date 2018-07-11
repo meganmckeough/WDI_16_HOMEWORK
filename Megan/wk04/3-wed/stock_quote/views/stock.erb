@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Stock Price</title>
+	<link rel="stylesheet" href="styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Gaegu" rel="stylesheet">
+</head>
+<body>
+	<h2>The current price of <span><%= @company_name %> (<%= @stock_input %>)</span> is... $<%= @current_price %></h2>
+	<p>Previous close: $<%= @previous_close %></p>
+	<p class="time">Last time checked: <%= @time %></p>
+
+	<footer>
+		<a href="/"> -- Home -- </a>
+	</footer>
+</body>
+</html>

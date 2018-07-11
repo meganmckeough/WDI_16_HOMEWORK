@@ -1,0 +1,45 @@
+body {
+	background-color: mistyrose;
+	font-family: 'Gaegu', cursive;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 50px;
+}
+
+input, button {
+	font-size: 30px;
+	border-radius: 10px;
+}
+
+button {
+	background-color: #ff9f95;
+	font-family: 'Gaegu', cursive;
+}
+
+.time, footer {
+	font-style: italic;
+}
+
+span {
+	font-size: 40px;
+	color: #9a2b46;
+}
+
+a {
+	color: #9a2b46;
+	text-decoration: none;
+}
+
+footer {
+	padding-top: 100px;
+}
+
+img {
+	width: 400px;
+	height: auto;
+	border-radius: 10px;
+}
+
+p {
+	font-size: 20px;
+}

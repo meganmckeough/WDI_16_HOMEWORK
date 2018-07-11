@@ -74,6 +74,8 @@ users["Erik"][:favorite_numbers].sort.first
 
 #6
 # users["Anil"][:favorite_numbers].each { |number| puts number if number.even? }
+# even_numbers = users['Anil'][:favorite_numbers].select { |number| number.even? } 
+# p even_numbers
 
 #7
 common = users["Erik"][:favorite_numbers] & users["Jonathan"][:favorite_numbers] & users["Anil"][:favorite_numbers] & users["Megan"][:favorite_numbers]
@@ -86,6 +88,11 @@ all_numbers_array = []
 all_numbers_array.push(users["Erik"][:favorite_numbers]).push(users["Jonathan"][:favorite_numbers]).push(users["Anil"][:favorite_numbers]).push(users["Megan"][:favorite_numbers])
 clean_numbers = all_numbers_array.flatten.sort.uniq
 
+#dt solution
+# map extracts what you want and transforms each item, into copied array
+# result_arr = users.values.map do |hash|
+#   hash[:favorite_numbers]
+# end.flatten.sort.uniq
 
 #trying to make this automtatic not hardcoded
 # users.each do |person| 
