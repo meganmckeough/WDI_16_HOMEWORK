@@ -3,6 +3,8 @@ require 'sinatra/reloader'
 require 'pry'
 require 'stock_quote'
 
+#localhost:4567/
+
 get '/' do
 	erb(:index)
 end
