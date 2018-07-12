@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>99 Bottles</title>
+	<link rel="stylesheet" href="styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+</head>
+<body>
+	<% if @number_bottles_page <= 0 %>
+		<div class="wrapper">
+			<div class="text">	
+				<h2>No bottles of beer on the wall.</h2>
+				<a href="/">>> Start over! <<</a>
+			</div>
+		</div>
+	<% else %>
+		<div class="wrapper">
+			<div class="text">
+				<h2><%= @number_bottles_page %> bottles of beer on the wall...</h2>
+				<a href="/<%=@number_bottles_link%>">>> Take one down <<</a>
+			</div>
+		</div>
+	<% end %>
+</body>
+</html>

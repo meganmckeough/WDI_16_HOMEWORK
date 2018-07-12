@@ -1,0 +1,27 @@
+body {
+	background-image: url("beer.jpg");
+	font-family: 'Raleway', sans-serif;
+	color: #6e4f67;
+}
+
+div.wrapper {
+	height: 100vh;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+div.text {
+	padding: 50px;
+	background-color: rgba(97, 194, 195, .95);
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+	color: #f27621;
+}
