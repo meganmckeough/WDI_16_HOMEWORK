@@ -1,0 +1,131 @@
+body {
+	font-family: 'Quicksand', sans-serif;
+	background-image: url("/images/static.gif");
+}
+
+img {
+	height: 70vh;
+	width: auto;
+	border-radius: 20px;
+	margin: 20px;
+	border: white solid 2px;
+}
+
+header {
+	text-align: right;
+	background-color: #28c4bd;
+	color: black;
+	padding: 5px;
+	text-transform: uppercase;
+}
+
+header h2 {
+	padding-right: 10px;
+}
+
+.list-image {
+	height: 150px;
+	width: auto;	
+}
+
+.list-wrapper {
+	display: flex;
+	flex-direction: row;
+}
+
+.title {
+	font-size: 3em;
+	text-transform: uppercase;
+}
+
+.container {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+input, button {
+	font-size: 40px;
+	border: 2px solid #28c4bd;
+}
+
+form {
+	margin: 50px;
+}
+
+button {
+	background-color: #28c4bd;
+}
+
+.genre {
+	font-style: italic;
+}
+
+.year {
+	font-size: 1em;
+}
+
+.details-wrapper {
+	height: 100vh;
+	display: flex;
+	flex-direction: row;
+	background-color: lightgrey;
+}
+
+footer {
+	text-align: center;
+	background-color: #1f1ca4;
+	color: white;
+	height: 5vh;
+	padding: 10px 0;
+	text-transform: uppercase;
+	font-size: 1.5em;
+}
+
+a.home {
+	align-self: flex-end;
+	width: 20vw;
+	font-size: 3em;
+	color: #1f1ca4;
+	margin: 20px;
+	text-align: right;
+}
+
+a.about {
+	background-color: #28c4bd;
+	color: black;
+	font-size: 2em;
+	padding: 5px;
+	margin-bottom: 10px;
+}
+
+a {
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.about-text {
+	width: 50vw;
+	margin: 0 auto;
+	padding: 30px;
+	text-align: center;
+}
+
+.list-container,
+.about-wrapper {
+	display: flex;
+	flex-direction: column;
+	background-color: lightgrey;
+}
+
+.list-container h3 {
+	text-align: center;
+}
+
+.about-image {
+	width: 50vw;
+	height: auto;
+	margin: 0 auto;
+}

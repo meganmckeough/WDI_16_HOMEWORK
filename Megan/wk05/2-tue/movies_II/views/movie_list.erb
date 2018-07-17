@@ -1,0 +1,19 @@
+
+<header>
+	<h2><<< VHS Video Finder!</h2>
+</header>
+
+<div class="list-container">
+	<h3>We have found a few that match your query! Please select from the below.</h3>
+	<h3>&darr;</h3>
+	<% @movies_to_show.each do |movie| %>
+		<div class="list-wrapper">
+			<a href="/<%= movie['Title'] %>"><img class="list-image" src="<%= movie["Poster"] %>" alt="No image"></a>
+			<div class="list-container">
+				<p><%= movie["Title"] %></p>
+				<p><%= movie["Year"] %></p>
+			</div>
+		</div>
+	<% end %>
+	<a class="home" href="/"> <<< home</a>
+</div>
