@@ -2,23 +2,41 @@
 	<h2><<< VHS Video Finder!</h2>
 </header>
 
-#I know i need to update this so the crab hands work for ones pulled from omdb e.g "Title"
 
-<div class="details-wrapper">
-	<img src="<%= @movie_result["Poster"] %>" alt="Poster">
+<% if @result.count == 0 %>
+	<div class="details-wrapper">
+		<img src="<%= @movie_result["Poster"] %>" alt="Poster">
 
-	<div class="details">
-		<h1 class="title"><%= @movie_result["title"] %></h1>
-		<h2>Directed by <%= @movie_result["director"] %></h2>
+		<div class="details">
+			<h1 class="title"><%= @movie_result["Title"] %></h1>
+			<h2>Directed by <%= @movie_result["Director"] %></h2>
 
-		<h3 class="genre"><%= @movie_result["genre"] %></h3>
-		<h3 class="year"><%= @movie_result["year"] %></h3>
-		
-		<p><%= @movie_result["plot"] %></p>
+			<h3 class="genre"><%= @movie_result["Genre"] %></h3>
+			<h3 class="year"><%= @movie_result["Year"] %></h3>
+			
+			<p><%= @movie_result["Plot"] %></p>
+		</div>
+
+		<a class="home" href="/"> <<< home</a>
 	</div>
 
-	<a class="home" href="/"> <<< home</a>
-</div>
+<% else %>
+	<div class="details-wrapper">
+		<img src="<%= @movie_result["poster"] %>" alt="Poster">
+
+		<div class="details">
+			<h1 class="title"><%= @movie_result["title"] %></h1>
+			<h2>Directed by <%= @movie_result["director"] %></h2>
+
+			<h3 class="genre"><%= @movie_result["genre"] %></h3>
+			<h3 class="year"><%= @movie_result["year"] %></h3>
+			
+			<p><%= @movie_result["plot"] %></p>
+		</div>
+
+		<a class="home" href="/"> <<< home</a>
+	</div>
+<% end %>
 
 
 
