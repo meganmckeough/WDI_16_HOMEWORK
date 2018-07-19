@@ -1,0 +1,15 @@
+body {
+	color: hotpink;
+	font-family: 'Work Sans', sans-serif;
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+	color: #FF6969;
+}
+
+.add {
+	text-decoration: underline;
+	color: #B469FF;
+}

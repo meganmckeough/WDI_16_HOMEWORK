@@ -1,0 +1,13 @@
+<header>
+	<h1>My 2018 Book Log!</h1>
+</header>
+
+<a href="/books/new" class="add">Finished a book! Add to the stack.</a>
+
+<% @books.each do |book| %>
+	<p>
+		<a href="/books/<%= book.id %>">
+			<%= book.title %>
+		</a>
+	</p>
+<% end %>
