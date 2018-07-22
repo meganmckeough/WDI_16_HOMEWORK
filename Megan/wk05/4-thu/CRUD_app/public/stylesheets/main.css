@@ -48,10 +48,6 @@ footer {
 	color: white;
 }
 
-main {
-	height: 95vh;
-}
-
 header {
 	padding-bottom: 20px;
 }
@@ -71,6 +67,7 @@ header {
 	flex-direction: column;
 	padding: 30px 0;
 	margin: 40px 0;
+	height: 50vh;
 }
 
 .stats span {
@@ -91,6 +88,7 @@ header {
 
 .coming-soon {
 	font-style: italic;
+	margin-bottom: 20px;
 }
 
 .click {
@@ -107,3 +105,7 @@ img.mini {
 	height: auto;
 	margin: none;
 }
+
+/*div.books-wrapper {
+	height: 80%;
+}*/
