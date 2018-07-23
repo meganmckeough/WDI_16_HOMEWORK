@@ -10,3 +10,6 @@ CREATE TABLE books (
 );
 
 INSERT INTO books (title, author, genre, rating, image_url) VALUES ('Less Than Zero', 'Bret Easton Ellis', 'fiction', 4, 'https://images.gr-assets.com/books/1328459200l/10317124.jpg');
+
+ALTER TABLE books ADD review TEXT;
+ALTER TABLE books ADD purchase_url VARCHAR(400);
