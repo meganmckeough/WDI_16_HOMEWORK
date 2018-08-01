@@ -1,0 +1,32 @@
+.hide {
+	display: none;
+}
+
+body {
+	text-align: center;
+	font-family: 'Nunito', sans-serif;
+	color: #69b4ff;
+	background-color: black;
+}
+
+input {
+	width: 200px;
+	border: 2px hotpink solid;
+	font-family: 'Nunito', sans-serif;
+	font-size: 1.5em;
+}
+
+button {
+	font-size: 1.5em;
+	background-color: hotpink;
+	font-family: 'Nunito', sans-serif;
+	padding: none;
+}
+
+p {
+	font-size: 1.5em;
+}
+
+a {
+	color: 	#69ffb4;
+}
