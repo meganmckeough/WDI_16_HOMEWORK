@@ -19,7 +19,7 @@ function findGifs (event) {
  
 	let options = {
       method: 'GET', 
-      url: `http://api.giphy.com/v1/gifs/search?q=${gifToFind}&api_key=cyP752rRWWXCcFdQwxYv0TXjFFA4tOfD&offset=${offset}&limit=10")`,
+      url: `http://api.giphy.com/v1/gifs/search?q=${gifToFind}&api_key=cyP752rRWWXCcFdQwxYv0TXjFFA4tOfD&offset=0&limit=10")`,
     }
 
     $.ajax(options).done(showResults);
@@ -39,10 +39,14 @@ function findMoreGifs () {
 }
 
 function showResults(data) {
+	console.log(data)
 	let results = data["data"]
 	results.forEach(function (gif) {
+		// let gifLink = document.createElement("a")
 		let gifImage = document.createElement("img") 
+		// gifLink.href = gif.url
 		gifImage.src = gif.images.fixed_height_downsampled.url
+		// gifLink.append(gifImage)
 		$(".results").append(gifImage)
 	})
 }
