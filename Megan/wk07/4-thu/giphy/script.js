@@ -42,7 +42,7 @@ function showResults(data) {
 	let results = data["data"]
 	results.forEach(function (gif) {
 		let gifImage = document.createElement("img") 
-		gifImage.src = gif.images.fixed_height.url
+		gifImage.src = gif.images.fixed_height_downsampled.url
 		$(".results").append(gifImage)
 	})
 }
