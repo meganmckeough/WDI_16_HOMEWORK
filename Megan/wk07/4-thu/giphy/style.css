@@ -1,0 +1,65 @@
+body {
+	background-image: url('background2.jpg');
+	text-align: center;
+	color: #00CDCD;
+	font-family: 'Roboto Mono', monospace;
+}
+
+header {
+	background-color: black;
+	padding: 2em;
+	border: 2px solid #F3D5F5;
+}
+
+h1 {
+	letter-spacing: 1em;
+	text-transform: uppercase;
+}
+
+main {
+	padding: 2em;
+}
+
+.results {
+	padding: 2em;
+}
+
+.results img {
+	display: block;
+	margin: 1em auto;
+	border: 2px solid #F3D5F5;
+}
+
+main {
+	height: 45vh;
+}
+
+footer {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	padding: 2em;
+	font-size: 1.5em;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+i {
+	padding: 0 1em;
+}
+
+.hide {
+	display: none;
+}
+
+input, button {
+	font-family: inherit;
+	font-size: 1.5em;
+	height: 2em;
+	background-color: #00CDCD;
+	border: solid black 3px;
+}
+
