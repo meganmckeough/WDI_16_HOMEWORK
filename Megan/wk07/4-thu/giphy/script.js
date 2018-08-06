@@ -53,7 +53,7 @@ function showResults(data) {
 
 function scrollTopReset (event) {
 	event.preventDefault()
-	window.scrollTo(0, 0);
+	window.scrollTo({top: 0, behavior: 'smooth'});
 }
 
 gifSearchForm.submit(findGifs)
