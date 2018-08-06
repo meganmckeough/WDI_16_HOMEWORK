@@ -1,0 +1,22 @@
+.square {
+	width: 20px;
+	height: 20px;
+	border: 1px solid black;
+}
+
+section {
+	width: 100%;
+	text-align: center;
+}
+
+body {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.brush-box {
+	width: 20px;
+	height: 20px;
+	margin: 0 auto;
+}
+
