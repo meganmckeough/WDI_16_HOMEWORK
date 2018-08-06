@@ -12,11 +12,30 @@ section {
 body {
 	display: flex;
 	flex-wrap: wrap;
+	font-family: 'Work Sans', sans-serif;
+}
+
+input,
+button {
+	font-family: inherit;
 }
 
 .brush-box {
 	width: 20px;
 	height: 20px;
 	margin: 0 auto;
+	background-color: hotpink;
+	border: 1px solid black;
+	padding: 4px;
+	margin: 2px;
+}
+
+h1 {
+	margin: 0 auto;
+}
+
+header {
+	display: flex;
+	flex-direction: row;
 }
 
