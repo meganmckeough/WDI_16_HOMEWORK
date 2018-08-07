@@ -1,0 +1,20 @@
+<h1>My Favourite CSS</h1>
+
+<form action="/colours" method="post">
+	<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+	<input type="text" name="hexcode" placeholder="Type #hexcode here">
+	<input type="text" name="img_url" placeholder="Image URL">	
+	<button>Add to colours!</button>
+</form>
+
+<section>
+
+	<% @colours.each do |colour| %>
+		<a class="colour-preview" href="/colours/<%= colour.id %>">
+			<img src="<%= colour.img_url %>" alt="">
+			<p>"<%= colour.hexcode %>"</p>
+		</a>
+	<% end %>
+
+</section>
+	

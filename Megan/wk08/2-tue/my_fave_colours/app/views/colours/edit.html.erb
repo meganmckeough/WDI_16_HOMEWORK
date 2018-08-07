@@ -1,0 +1,10 @@
+<h1>Edit this colour</h1>
+ 
+<form action="/colours/<%= @colour.id %>" method="post">
+	<input type="hidden" name="_method" value="put">
+	<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+	<input type="text" name="hexcode" value="<%= @colour.hexcode %>">
+	<input type="text" name="img_url" value="<%= @colour.img_url %>">
+	<button>Edit</button>
+</form> 
+
